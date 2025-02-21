@@ -1,5 +1,5 @@
 from django.urls import path,include
-from .views import home_page
+from .views import event
 urlpatterns = [
-    path('',home_page.as_view()),
+    path('',event.as_view()),
 ]

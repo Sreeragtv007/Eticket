@@ -9,6 +9,7 @@ from django.contrib.auth.models import User
 class userRegister(APIView):
 
     def post(self, request):
+
         serializer = CustomuserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()

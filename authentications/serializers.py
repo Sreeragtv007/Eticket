@@ -17,7 +17,6 @@ class CustomuserSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def validate(self, attrs):
-        print(attrs)
         return attrs
 
     def create(self, validated_data):
